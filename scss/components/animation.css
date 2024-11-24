@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/* ЦІ СТИЛІ ANIMATION */
 @keyframes jumpElement {
   0% {
     transform: scale(1);

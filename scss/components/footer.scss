@@ -3,7 +3,7 @@
 .footer {
   background-color: #2f303a;
 
-  .footer_container {
+  &_container {
     width: 100%;
     max-width: 1170px;
     margin: 0 auto;
@@ -13,7 +13,7 @@
     justify-content: center;
   }
 
-  img {
+  & img {
     margin-bottom: 20px;
   }
 
@@ -24,7 +24,7 @@
     font-style: normal;
   }
 
-  .footer_right {
+  &_right {
     display: flex;
     gap: 93px;
 
@@ -32,22 +32,34 @@
       display: flex;
       gap: 10px;
 
-      svg path {
+      & svg path {
         transition: 0.5s;
       }
 
-      svg:hover path {
+      & svg:hover path {
         transition: 0.5s;
         cursor: pointer;
         fill: #2196f3;
         fill-opacity: 1;
       }
 
-      svg:hover g path {
+      & svg:hover g path {
         transition: 0.5s;
         cursor: pointer;
         fill: white;
       }
+    }
+
+    &-title {
+      margin-bottom: 20px;
+      font-family: Roboto;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 16.41px;
+      letter-spacing: 0.03em;
+      text-align: left;
+      color: white;
+      text-transform: uppercase;
     }
   }
 
@@ -57,7 +69,7 @@
     gap: 10px;
     align-items: center;
 
-    .footer_email {
+    & .footer_email {
       width: 358px;
       height: 50px;
       background-color: transparent;
@@ -66,7 +78,7 @@
       color: white;
 
       &::placeholder {
-        font-family: Roboto;
+        font-family: "Roboto";
         font-size: 16px;
         font-weight: 400;
         line-height: 20px;
@@ -75,63 +87,6 @@
         color: #ffffff99;
       }
     }
-
-    &--btn {
-      display: flex;
-      gap: 10px;
-      align-items: center;
-      justify-content: center;
-      width: 200px;
-      height: 50px;
-      border-radius: 4px;
-      font-family: Roboto;
-      font-size: 16px;
-      font-weight: 700;
-      line-height: 30px;
-      letter-spacing: 0.06em;
-      text-align: center;
-      border: 0;
-      cursor: pointer;
-      color: white;
-      background-color: #2196f3;
-      box-shadow: 0px 4px 4px 0px #00000026;
-    }
-  }
-
-  .footer_rigth-title {
-    margin-bottom: 20px;
-    font-family: Roboto;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 16.41px;
-    letter-spacing: 0.03em;
-    text-align: left;
-    color: white;
-    text-transform: uppercase;
-  }
-
-  .footer_address {
-    font-family: Roboto;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0.03em;
-    text-align: left;
-    color: white;
-    margin-bottom: 9px;
-  }
-
-  .footer_link {
-    font-family: Roboto;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0.03em;
-    text-align: left;
-    color: #ffffff99;
-
-    &:not(:last-child) {
-      margin-bottom: 9px;
-    }
   }
 }
+  
