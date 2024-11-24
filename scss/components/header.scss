@@ -12,6 +12,7 @@
         margin: 0 auto;
     }
 
+    /* leftside */
     &_leftside {
         display: flex;
 
@@ -54,10 +55,6 @@
                 transition: 1s;
             }
 
-            &:not(:last-child) {
-                margin-right: 50px;
-            }
-
             & a {
                 transition: 0.5s;
                 font-family: "Roboto";
@@ -71,15 +68,36 @@
                     color: #2196f3;
                 }
             }
+
+            &:not(:last-child) {
+                margin-right: 50px;
+            }
         }
     }
 
-    &_rigthside {
+    /* rightside */
+    &_rightside {
         display: flex;
         align-items: center;
         gap: 30px;
 
-        &--first,
+        &--first {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            &:hover {
+                cursor: pointer;
+
+                & svg path,
+                & a {
+                    color: #2196f3;
+                    fill: #2196f3 !important;
+                    transition: 0.5s;
+                }
+            }
+        }
+
         &--second {
             display: flex;
             align-items: center;
@@ -88,14 +106,10 @@
             &:hover {
                 cursor: pointer;
 
-                & svg path {
-                    color: #2196f3;
-                    fill: #2196f3 !important;
-                    transition: 0.5s;
-                }
-
+                & svg path,
                 & a {
                     color: #2196f3;
+                    fill: #2196f3 !important;
                     transition: 0.5s;
                 }
             }
@@ -103,7 +117,7 @@
 
         & a {
             transition: 0.5s;
-            font-family: "Roboto";
+            font-family: Roboto;
             font-size: 14px;
             font-weight: 500;
             line-height: 16.41px;
@@ -113,14 +127,14 @@
                 margin-right: 50px;
             }
 
-            &:hover {
+            &a:hover {
                 transition: 0.5s;
                 color: #2196f3;
             }
-        }
 
-        & svg {
-            transition: 0.5s;
+            & svg {
+                transition: 0.5s;
+            }
         }
     }
 }

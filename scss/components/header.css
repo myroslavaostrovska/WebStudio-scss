@@ -3,6 +3,8 @@
 .header {
   margin-top: 24px;
   margin-bottom: 25px;
+  /* leftside */
+  /* rightside */
 }
 .header_container {
   display: flex;
@@ -46,9 +48,6 @@
   transform: scale(1.1);
   transition: 1s;
 }
-.header_navigation--item:not(:last-child) {
-  margin-right: 50px;
-}
 .header_navigation--item a {
   transition: 0.5s;
   font-family: "Roboto";
@@ -61,43 +60,55 @@
   transition: 0.5s;
   color: #2196f3;
 }
-.header_rigthside {
+.header_navigation--item:not(:last-child) {
+  margin-right: 50px;
+}
+.header_rightside {
   display: flex;
   align-items: center;
   gap: 30px;
 }
-.header_rigthside--first, .header_rigthside--second {
+.header_rightside--first {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-.header_rigthside--first:hover, .header_rigthside--second:hover {
+.header_rightside--first:hover {
   cursor: pointer;
 }
-.header_rigthside--first:hover svg path, .header_rigthside--second:hover svg path {
+.header_rightside--first:hover svg path, .header_rightside--first:hover a {
   color: #2196f3;
   fill: #2196f3 !important;
   transition: 0.5s;
 }
-.header_rigthside--first:hover a, .header_rigthside--second:hover a {
+.header_rightside--second {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.header_rightside--second:hover {
+  cursor: pointer;
+}
+.header_rightside--second:hover svg path, .header_rightside--second:hover a {
   color: #2196f3;
+  fill: #2196f3 !important;
   transition: 0.5s;
 }
-.header_rigthside a {
+.header_rightside a {
   transition: 0.5s;
-  font-family: "Roboto";
+  font-family: Roboto;
   font-size: 14px;
   font-weight: 500;
   line-height: 16.41px;
   letter-spacing: 0.02em;
 }
-.header_rigthside a:not(:last-child) {
+.header_rightside a:not(:last-child) {
   margin-right: 50px;
 }
-.header_rigthside a:hover {
+.header_rightside aa:hover {
   transition: 0.5s;
   color: #2196f3;
 }
-.header_rigthside svg {
+.header_rightside a svg {
   transition: 0.5s;
 }/*# sourceMappingURL=header.css.map */
