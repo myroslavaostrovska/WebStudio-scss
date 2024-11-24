@@ -109,12 +109,9 @@ form textarea::placeholder {
 .form_field:focus-within svg g path {
   fill: #2196f3;
 }
-.form_field input:focus {
+.form_field input:focus, .form_field textarea:focus {
   outline: none;
   border-color: #2196f3;
-}
-.form_field textarea:focus {
-  outline: none;
 }
 .form_accept--rules {
   display: flex;
