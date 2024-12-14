@@ -1,0 +1,92 @@
+/* ЦІ СТИЛИ РОЗРАХОВАНІ ДЛЯ HEADER */
+
+header {
+  margin-top: 24px;
+  margin-bottom: 25px;
+}
+
+.header_container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.header_leftside {
+  display: flex;
+}
+
+.header_leftside--image {
+  margin-right: 93px;
+}
+
+.header_navigation {
+  display: flex;
+}
+
+.header_navigation--item a {
+  transition: 0.5s;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16.41px;
+  letter-spacing: 0.02em;
+}
+
+.header_navigation--item a:hover {
+  transition: 0.5s;
+  color: #2196f3;
+}
+
+.header_navigation--item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.header_rigthside {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.header_rigthside--first:hover,
+.header_rigthside--second:hover {
+  cursor: pointer;
+}
+
+.header_rigthside--first:hover svg path,
+.header_rigthside--first:hover a,
+.header_rigthside--second:hover svg path,
+.header_rigthside--second:hover a {
+  color: #2196f3;
+  fill: #2196f3 !important;
+  transition: 0.5s;
+}
+
+.header_rigthside a:not(:last-child) {
+  margin-right: 50px;
+}
+
+.header_rigthside a {
+  transition: 0.5s;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16.41px;
+  letter-spacing: 0.02em;
+}
+
+.header_rigthside a:hover {
+  transition: 0.5s;
+  color: #2196f3;
+}
+
+.header_rigthside svg {
+  transition: 0.5s;
+}
+
+.header_rigthside--first, .header_rigthside--second {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

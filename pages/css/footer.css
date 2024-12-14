@@ -1,0 +1,135 @@
+.footer {
+  background-color: #2f303a;
+}
+
+.footer_container {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  gap: 70px;
+  padding-top: 60px;
+  justify-content: center;
+}
+
+.footer img {
+  margin-bottom: 20px;
+}
+
+address {
+  padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  font-style: normal;
+}
+
+.footer_right {
+  display: flex;
+  gap: 93px;
+}
+
+.footer_rigth--medias {
+  display: flex;
+  gap: 10px;
+}
+
+.footer_rigth--medias svg path {
+  transition: 0.5s;
+}
+
+.footer_rigth--medias svg:hover path {
+  transition: 0.5s;
+  cursor: pointer;
+  fill: #2196f3;
+  fill-opacity: 1;
+}
+
+.footer_rigth--medias svg:hover g path {
+  transition: 0.5s;
+  cursor: pointer;
+  fill: white;
+}
+
+.footer_form {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}
+
+.footer_form .footer_email {
+  width: 358px;
+  height: 50px;
+  background-color: transparent;
+  border: 1px solid #ffffff4d;
+  padding-left: 14px;
+  color: white;
+}
+
+.footer_form--btn {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  text-align: center;
+  border: 0;
+  cursor: pointer;
+  color: white;
+  background-color: #2196f3;
+  box-shadow: 0px 4px 4px 0px #00000026;
+}
+
+.footer_form .footer_email::placeholder {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: #ffffff99;
+}
+
+.footer_rigth-title {
+  margin-bottom: 20px;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16.41px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: white;
+  text-transform: uppercase;
+}
+
+.footer_address {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: white;
+  margin-bottom: 9px;
+}
+
+.footer_link {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: #ffffff99;
+}
+
+.footer_link:not(:last-child) {
+  margin-bottom: 9px;
+}

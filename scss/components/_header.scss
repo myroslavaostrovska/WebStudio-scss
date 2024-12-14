@@ -1,0 +1,85 @@
+
+.header {
+  margin-top: 24px;
+  margin-bottom: 25px;
+
+  &_container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+
+  &_leftside {
+    display: flex;
+
+    &--image {
+      margin-right: 93px;
+    }
+  }
+
+  &_navigation {
+    display: flex;
+
+    &--item a {
+      transition: 0.5s;
+      font-family: Roboto;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 16.41px;
+      letter-spacing: 0.02em;
+
+      &:hover {
+        transition: 0.5s;
+        color: #2196f3;
+      }
+    }
+    &--item:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+
+  &_rigthside {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    &--first:hover svg,
+    &--first:hover a,
+    &--second:hover svg path,
+    &--second:hover a {
+      color: #2196f3;
+      fill: #2196f3 !important;
+      transition: 0.5s;
+    }
+
+    & a {
+      transition: 0.5s;
+      font-family: Roboto;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 16.41px;
+      letter-spacing: 0.02em;
+
+      &:not(:last-child) {
+        margin-right: 50px;
+      }
+
+      &:hover {
+        transition: 0.5s;
+        color: #2196f3;
+      }
+    }
+    & svg {
+      transition: 0.5s;
+    }
+
+    &--first,
+    &--second {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+}
