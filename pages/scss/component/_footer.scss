@@ -23,6 +23,18 @@
     display: flex;
     gap: 93px;
 
+    &-title {
+      margin-bottom: 20px;
+      font-family: Roboto;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 16.41px;
+      letter-spacing: 0.03em;
+      text-align: left;
+      color: white;
+      text-transform: uppercase;
+    }
+
     &--medias {
       display: flex;
       gap: 10px;
@@ -41,23 +53,13 @@
         fill: white;
       }
     }
-    &-title {
-      margin-bottom: 20px;
-      font-family: Roboto;
-      font-size: 14px;
-      font-weight: 700;
-      line-height: 16.41px;
-      letter-spacing: 0.03em;
-      text-align: left;
-      color: white;
-      text-transform: uppercase;
-    }
   }
   &_form {
     display: flex;
     flex-direction: row;
     gap: 10px;
     align-items: center;
+
     .footer_email {
       width: 358px;
       height: 50px;
@@ -65,7 +67,18 @@
       border: 1px solid #ffffff4d;
       padding-left: 14px;
       color: white;
+
+      &::placeholder {
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0.03em;
+        text-align: left;
+        color: #ffffff99;
+      }
     }
+
     &--btn {
       display: flex;
       gap: 10px;
@@ -86,17 +99,9 @@
       background-color: #2196f3;
       box-shadow: 0px 4px 4px 0px #00000026;
     }
-    .footer_email::placeholder {
-      font-family: Roboto;
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 20px;
-      letter-spacing: 0.03em;
-      text-align: left;
-      color: #ffffff99;
-    }
   }
-  &_adress {
+
+  &_address {
     font-family: Roboto;
     font-size: 14px;
     font-weight: 400;
@@ -106,6 +111,7 @@
     color: white;
     margin-bottom: 9px;
   }
+
   &_link {
     font-family: Roboto;
     font-size: 14px;
@@ -114,8 +120,9 @@
     letter-spacing: 0.03em;
     text-align: left;
     color: #ffffff99;
+
     &:not(:last-child) {
-      margin-bottom: 9px;
+        margin-bottom: 9px;
     }
   }
 }
