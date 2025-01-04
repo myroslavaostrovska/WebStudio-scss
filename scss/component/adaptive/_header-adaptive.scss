@@ -1,0 +1,31 @@
+@media screen and (max-width: 905px) {
+  .header {
+    &_rigthside {
+      flex-direction: column;
+      gap: 10px;
+      align-items: start;
+    }
+  }
+}
+
+@media screen and (max-width: 745px) {
+  .header {
+    &_navigation,
+    &_rigthside--first {
+      display: none;
+    }
+
+    &_mobile--menu {
+      display: block;
+
+      &:hover {
+        cursor: pointer;
+     
+      }
+      &:hover &--list{
+        transform: translateX(0);
+        
+      }
+    }
+  }
+}
